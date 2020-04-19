@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <title>simple svg heatmap thing</title>
+  <link rel="stylesheet" href="main.css">
+  <style>
+
+  </style>
+</head>
+
+<body class="with-sidebar">
+  <section class="rapper">
+
+    <article class="svg-container">
+      <svg viewbox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
+        <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+        <g>
+          <!--title>background</title-->
+          <rect fill="none" id="canvas_background" height="482" width="642" y="-1" x="-1" />
+          <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+            <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%" />
+          </g>
+        </g>
+        <g class="topview" id="svg_20">
+          <!--title>car from top</title-->
+          <ellipse ry="20.5" rx="37" id="svg_16" cy="94.953125" cx="61.5" stroke-width="1.5" stroke="#000" fill="#fff" />
+          <ellipse ry="20.5" rx="37" id="svg_17" cy="384.015411" cx="61.5" stroke-width="1.5" stroke="#000" fill="#fff" />
+          <ellipse ry="20.5" rx="37" id="svg_18" cy="384.015411" cx="593.56012" stroke-width="1.5" stroke="#000" fill="#fff" />
+          <ellipse ry="20.5" rx="37" id="svg_12" cy="95.952911" cx="593.56012" stroke-width="1.5" stroke="#000" fill="#fff" />
+          <path id="svg_11" d="m29.5,242.45313c-1,-170.47514 16.46409,-170.99999 296,-171c279.53591,0 296,-30.47514 296,171c0,201.47513 -19.46409,168 -296,171c-276.53591,3 -295,-0.52487 -296,-171z" stroke-width="1.5" stroke="#000" fill="none" />
+          <path id="svg_14" d="m50.5,97.453125" opacity="0.5" stroke-width="1.5" stroke="#000" fill="#fff" />
+          <path stroke="#000" class="window" id="svg_4" d="m425.65462,241.948203c1.41409,-209.962424 0.93174,-166.460129 38.53385,-172.494936c21.28942,0 38.53384,77.193863 38.53384,172.494936c0,95.301063 -17.24442,172.494936 -38.53384,172.494936c-32.60211,-2.011603 -39.94793,37.467477 -38.53385,-172.494936z" stroke-width="1.5" fill="none" />
+          <path id="svg_2" class="window" d="m172.32083,242.95312c0,-94.75139 24.3895,-171.50001 54.5,-171.50001c46.1105,0 56.5,-12.25138 54.5,171.50001c-2,183.75138 -10.3895,171.5 -54.5,171.5c-30.1105,0 -54.5,-76.74862 -54.5,-171.5z" stroke-width="1.5" stroke="#000" fill="none" />
+        </g>
+        <g class="heatmaps">
+          <!--title>overlay heatmaps</title-->
+          <path class="heatmap hide" id="svg_28" data-mapname="Right 1" d="m36.492689,149.953123c-1.87349,-23.425413 19.759629,-72.499998 128.334068,-76.499998c54.24323,0 81.496819,11.074585 78.686584,68.499998c-2.810235,57.425413 -33.810803,49.499997 -116.156383,48.499997c-85.155815,2 -88.990779,-17.074584 -90.864269,-40.499997z" />
+          <path class="heatmap hide" id="svg_27" data-mapname="Left 1" d="m35.490072,334.604805c-1.828308,24.450718 19.283094,75.673244 125.239089,79.84832c52.935069,0 79.531395,-11.559308 76.788933,-71.498169c-2.742462,-59.938861 -32.995403,-51.666558 -113.355089,-50.622789c-83.102148,-2.087538 -86.844626,17.82192 -88.672933,42.272638z" />
+          <path class="heatmap hide" id="svg_29" data-mapname="Right 2" d="m619.294231,143.953123c1.560355,-23.425413 -16.457002,-72.499998 -106.884295,-76.499998c-45.17701,0 -67.87543,11.074585 -65.534899,68.499998c2.340532,57.425413 28.159662,49.499997 96.741991,48.499997c70.922861,2 74.116849,-17.074584 75.677203,-40.499997z" />
+          <path class="heatmap hide" id="svg_24" data-mapname="Left 2" d="m615.29945,337.4973c1.469991,23.25878 -15.503932,71.984281 -100.694335,75.955828c-42.560687,0 -63.94458,-10.995808 -61.739595,-68.012734c2.204985,-57.016927 26.52886,-49.147887 91.1394,-48.155c66.815526,-1.985773 69.824541,16.953127 71.294531,40.211907z" />
+          <ellipse class="heatmap hide" ry="129" data-mapname="Middle 1" rx="92" id="svg_30" cy="240.453125" cx="345.5" stroke-width="0" stroke="#000" fill="#ffaaaa" />
+        </g>
+
+      </svg>
+
+    </article>
+    <aside class="controls stack">
+      <ul class="stack">
+        <!--  <li><button type="button" data-heatmap="l1" id="l1">Left 1</button></li>
+      <li><button type="button" data-heatmap="r1" id="r1">Right 1</button></li>
+      <li><button type="button" data-heatmap="l2" id="l2">Left 2</button></li>
+      <li><button type="button" data-heatmap="r2" id="r2">Right 2</button></li>
+      <li><button type="button" data-heatmap="m1" id="m1">Middle 1</button></li>-->
+      </ul>
+      <div><button id="pulse_toggler" class="">Pulsate</button></div>
+    </aside>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
