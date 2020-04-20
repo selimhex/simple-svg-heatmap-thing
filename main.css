@@ -16,7 +16,7 @@ body {height: 100vh;padding: 1% calc((100vw - 60em) / 2);} /* body padding squee
 .stack > * + * {  margin-top: var(--space); }
 .with-sidebar > * { display: flex; flex-wrap: wrap; margin: calc((var(--s1) / 2 * -1) - 0em); width: auto;padding: 0em;} /* wRapper */
 .with-sidebar > * > * { margin: calc(var(--s1) / 2); flex-grow: 1; } /* sidebar & main frame */
-.with-sidebar > * > :first-child { flex-basis: 0; flex-grow: 999; min-width: calc(50vw); } /* min article width: 50% of the viewport */
+.with-sidebar > * > :first-child { flex-basis: 0; flex-grow: 999; min-width: calc(65%); } /* min article width: 50% of the viewport */
 
 article { } /* svg Container */
 article, aside {background: #eee;} /* make it greeey */
