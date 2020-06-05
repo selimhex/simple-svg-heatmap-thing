@@ -6,11 +6,11 @@
   --s1: 1rem;
 }
 /* Rudimentary Css Resets */
-* { max-width: var(--measure); height: auto; line-height: var(--line-height);}
+* { max-width: var(--measure);line-height: var(--line-height);}
 html,body,div,header,nav,main,footer,section, aside, article, svg, img, .navbar__top > * { max-width: none; }
-*, *::before, *::after { box-sizing: border-box;  background-color: inherit; font-family: inherit; color: inherit; overflow-wrap: break-word; margin: 0; padding: 0; border-style: solid; border-width: 0px; border-color: currentColor; font-size: inherit; font-weight: inherit; }
+*, *::before, *::after { box-sizing: border-box; background-color: inherit; font-family: inherit; color: inherit; overflow-wrap: break-word; margin: 0; padding: 0; border-style: solid; border-width: 0px; border-color: currentColor; font-size: inherit; font-weight: inherit; }
 
-body {height: 100vh;padding: 1% calc((100vw - 60em) / 2);} /* body padding squeezes wrapper until: 60em*16px=960px; */
+body {height: 100vh;padding: 1% calc((100vw - 80em) / 2);} /* body padding squeezes wrapper until: 60em*16px=960px; */
 
 .stack { --space: 1.5rem;  display: flex; flex-direction: column; justify-content: flex-start; }
 .stack > * + * {  margin-top: var(--space); }
@@ -20,9 +20,9 @@ body {height: 100vh;padding: 1% calc((100vw - 60em) / 2);} /* body padding squee
 
 article { } /* svg Container */
 article, aside {background: #eee;} /* make it greeey */
-aside.controls {padding: 1em;height: auto; display: flex; flex-direction: column; justify-content: center;} /* Buttons Container */
-aside.controls * { width: auto;}
-aside.controls > ul.stack {list-style-type: none; --space: .1rem;} /* Stack Spacing refine */
+aside {padding: 1em;height: auto; display: flex; flex-direction: column; justify-content: center;} /* Buttons Container */
+aside * { width: auto;}
+aside > ul.stack {list-style-type: none; --space: .1rem;} /* Stack Spacing refine */
 button {display: inline-block; border: 1px solid #111; text-align: center;padding: .05em .5em;}
 
 svg {height: auto; max-height: 95vh;}
